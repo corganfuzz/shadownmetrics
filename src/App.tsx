@@ -3,6 +3,8 @@ import { CdsButton } from '@cds/react/button';
 import { registerIcons } from './icons';
 import { Alerts } from './components/Alerts';
 import { Timeline } from './components/Timeline';
+import { Stacker } from './components/Stacker';
+import { Home } from './components/Home';
 
 // Register all icons
 registerIcons();
@@ -29,29 +31,28 @@ export default class App extends Component<{}, AppState> {
 
   render() {
     return (
-      <main cds-layout="p:lg vertical gap:lg" cds-text="body">
-        <div cds-layout="horizontal align:vertical-center align:space-between">
-          <CdsButton action="outline" onClick={this.toggleTheme}>
-            <cds-icon shape={this.state.theme === 'light' ? 'moon' : 'sun'}></cds-icon>
-            {this.state.theme === 'light' ? 'Dark Mode' : 'Light Mode'}
+      <Home>
+        {/* <div cds-layout="vertical gap:lg" cds-text="body">
+          <div cds-layout="horizontal align:vertical-center align:space-between">
+            <CdsButton action="outline" size="sm" onClick={this.toggleTheme}>
+              <cds-icon shape={this.state.theme === 'light' ? 'moon' : 'sun'}></cds-icon>
+              {this.state.theme === 'light' ? 'Dark Mode' : 'Light Mode'}
+            </CdsButton>
+          </div>
+
+          <Alerts
+            show={this.state.show}
+            onClose={() => this.setState({ show: false })}
+          />
+
+          <CdsButton status="success" size="sm" onClick={() => this.setState({ show: true })}>
+            Show Alert
           </CdsButton>
-        </div>
 
-        <Alerts
-          show={this.state.show}
-          onClose={() => this.setState({ show: false })}
-        />
-
-        {/* <CdsButton status="success" onClick={() => this.setState({ show: true })}>
-          Show Alert
-        </CdsButton>
-
-        <Buttons />
-        <Tags />
-        <Badges />
-        <Icons /> */}
-        <Timeline />
-      </main>
+          <Timeline />
+          <Stacker />
+        </div> */}
+      </Home>
     );
   }
 }

@@ -1,4 +1,4 @@
-import { ClarityIcons, userIcon, moonIcon, sunIcon } from '@cds/core/icon';
+import { ClarityIcons, userIcon, moonIcon, sunIcon, vmBugIcon, cogIcon, idBadgeIcon, bookIcon, layersIcon, codeIcon, pluginIcon, helpIcon } from '@cds/core/icon';
 import '@cds/core/icon/register.js';
 import {
   successStandardIcon,
@@ -15,6 +15,14 @@ export function registerIcons() {
     successStandardIcon,
     errorStandardIcon,
     dotCircleIcon,
-    circleIcon
+    circleIcon,
+    vmBugIcon,
+    cogIcon,
+    idBadgeIcon,
+    bookIcon,
+    layersIcon,
+    codeIcon,
+    pluginIcon,
+    helpIcon
   );
 }

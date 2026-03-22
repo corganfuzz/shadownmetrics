@@ -2,10 +2,6 @@ import { Component } from 'react';
 import { CdsButton } from '@cds/react/button';
 import { registerIcons } from './icons';
 import { Alerts } from './components/Alerts';
-import { Buttons } from './components/Buttons';
-import { Tags } from './components/Tags';
-import { Badges } from './components/Badges';
-import { Icons } from './components/Icons';
 import { Timeline } from './components/Timeline';
 
 // Register all icons

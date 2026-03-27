@@ -14,6 +14,8 @@ import {
     angleDoubleIcon,
 } from '@cds/core/icon';
 
+import { Stacker } from './Stacker';
+
 ClarityIcons.addIcons(
     vmBugIcon,
     cogIcon,
@@ -146,6 +148,7 @@ export class Home extends Component<HomeProps, HomeState> {
                     {/* ── Page content ───────────────────────────────────── */}
                     <div className="content-area">
                         {this.props.children}
+                        <Stacker />
                     </div>
 
                 </div>
